@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stile-principal.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* Estilos de las luciérnagas */
+        .firefly {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            width: 0.4vw;
+            height: 0.4vw;
+            margin: -0.2vw 0 0 9.8vw;
+            animation: ease 200s alternate infinite;
+            pointer-events: none;
+        }
+
+        .firefly::before,
+        .firefly::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            transform-origin: -10vw;
+        }
+
+        .firefly::before {
+            background: black;
+            opacity: 0.4;
+            animation: drift ease alternate infinite;
+        }
+
+        .firefly::after {
+            background: white;
+            opacity: 0;
+            box-shadow: 0 0 0vw 0vw yellow;
+            animation: drift ease alternate infinite, flash ease infinite;
+        }
+
+        /* Animaciones */
+        @keyframes drift {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes flash {
+            0%, 30%, 100% {
+                opacity: 0;
+                box-shadow: 0 0 0vw 0vw yellow;
+            }
+            5% {
+                opacity: 1;
+                box-shadow: 0 0 2vw 0.4vw yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <i class='bx bxl-opera bx-tada bx-rotate-90 opera-logo' style='color:#080808'></i>
+            <span class="logo_name" style='color:#080808'>Bienvenidos a la página principal</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Panel</span>
+                </a>
+                <ul class="sub-menu white">
+                    <li><a class="link_name" href="principal.html">Página principal</a></li>
+                    <li><a href="Panel.html">Flor</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-collection'></i>
+                        <span class="link_name">Categoría</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Categoría</a></li>
+                    <li><a href="videos.html">Vídeos</a></li>
+                    <li><a href="imagenes.html">Imágenes</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-log-out'></i>
+                    <span class="link_name">Salir</span>
+                </a>
+                <ul class="sub-menu white">
+                    <li><a class="link_name" href="index.html">Salir</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="profile-details">
+            <div class="profile-content">
+                <img src="imagen/1.png" alt="Imagen de perfil">
+            </div>
+            <div class="name-job">
+                <div class="profile_name">Administrador</div>
+                <div class="job">Oscar Vega</div>
+            </div>
+            <i class='bx bx-log-out'></i>
+        </div>
+    </div>
+    <section class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu'></i>
+        </div>
+        <!-- Contenedor para posicionar la sección de escritura -->
+        <div class="writing-container">
+            <section class="writing-section">
+                <div class="writing-background">
+                    <div class="writing-content">
+                      <textarea id="autoTextarea" readonly placeholder="Escribe aquí...">CARTA DE 10 MESES 🥺🤍
+                        Mi amada Yuritzi Antonella,😍🤍🥺
+                        
+                        Con cada amanecer, mi primer pensamiento eres tú, 😍 y con cada anochecer, mi último suspiro lleva tu nombre.🥺 Hoy, al celebrar nuestros 10 meses de amor, cada fibra de mi ser vibra con la alegría de tenerte en mi vida, aunque sea en la distancia que nos separa momentáneamente.🥺🥺🤍
+                        
+                        Eres mi Güerita, la única que ha sabido tocar las cuerdas de mi corazón con una melodía que solo nosotros entendemos. Mis apodos para ti, My Reyna👑, My Fresita🍓, My Niña🥺, My Diosa🤍, son más que palabras; son sellos de un amor que crece y se fortalece con cada día que pasa.🥺🤭
+                        
+                        La distancia nos desafía😌, pero nuestro amor es un puente que la atraviesa con facilidad. Sueño con el día en que pueda envolverte en mis brazos, sentir el calor de tu piel y compartir ese primer beso que hemos guardado para un momento tan especial.🥺😍
+                        
+                        Anhelo el día en que puedas conocer a mi madre🥺, en que nuestras vidas se entrelacen aún más y en que cada "te amo🥺🤍" sea un eco de nuestra promesa de estar juntos para siempre.🥺👑 Hasta entonces, te envío mi amor en cada letra de esta carta, esperando que sientas mi abrazo a través de estas palabras.🥺😍
+                        
+                        Hemos hablado de tus sueños, de tu futuro como doctora, y quiero que sepas que no tengo duda de que serás la mejor. 🥺🤍No solo porque tienes la inteligencia y la dedicación, sino porque tienes el corazón más grande que jamás he conocido. 🤍🥺Serás mi única doctora, la única que tendrá el poder de curar cualquier mal con solo un gesto de amor.🥺🥺😍
+                        
+                        Yuritzi, mi amor🥺, mi vida,😍 mi todo, 🥰en ti veo mi hoy y todos mis mañanas. Prometo estar a tu lado en cada paso, apoyarte en cada decisión y celebrar cada logro contigo. 🥺😍Juntos, no hay meta inalcanzable, no hay sueño demasiado grande, no hay nada que no podamos superar.🥺😍
+                        
+                        Con todo el amor que tengo🤍, para la futura madre de mis hijos 😍🥺
+                        
+                        Oscar David Vega Daza.</textarea>
+                    </div>
+                    <div class="image-gallery">
+                        <img class="image1" src="imagen/1.png" alt="Imagen 1">
+                        <img class="image2" src="imagen/2.png" alt="Imagen 2">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script-principal.js"></script>
+</body>
+</html>
